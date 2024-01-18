@@ -7,6 +7,7 @@ export const useCart = () => {
     cart,
     decrementProductToCart,
     removeProductToCart,
+    resetCart,
   } = useContext(cartContext);
 
   const cartTotalItems = cart.products.reduce(
@@ -25,5 +26,6 @@ export const useCart = () => {
     add: incrementProductToCart,
     remove: decrementProductToCart,
     Eliminate: removeProductToCart,
+    reset: resetCart,
   };
 };

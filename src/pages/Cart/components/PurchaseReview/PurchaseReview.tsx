@@ -40,7 +40,7 @@ export const PurchaseReview = () => {
                 </div>
               </div>
               <div className="flex justify-between">
-                <p className="flex justify-between gap-2">
+                <p className="flex justify-between gap-1">
                   <span>R$</span>
                   <span>{item.product.price}</span>
                 </p>
@@ -51,20 +51,20 @@ export const PurchaseReview = () => {
         <div className="w-full mt-4">
           <p className="flex justify-between font-serif text-sm leading-8">
             Total de itens
-            <span className="flex gap-2">
+            <span className="flex gap-1">
               <span>R$</span>
               {totalAmount}
             </span>
           </p>
           <p className="flex justify-between font-serif text-sm leading-8">
             Entrega
-            <span className="flex gap-2">
+            <span className="flex gap-1">
               <span>R$</span>100
             </span>
           </p>
           <p className="flex justify-between text-xl">
             Total
-            <span className="flex gap-2">
+            <span className="flex gap-1">
               <span>R$</span>
               {totalAmount + 100}
             </span>

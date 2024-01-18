@@ -3,9 +3,9 @@ import { Cart } from '../cartContext.types';
 
 export type CartState = Cart;
 
-export type typeActions = 'increment' | 'decrement' | 'remove' | 'delete-all';
+export type Actions = 'increment' | 'decrement' | 'remove' | 'delete-all';
 
 export type CartAction = {
-  type: typeActions;
+  type: Actions;
   payload?: { product: Product };
 };

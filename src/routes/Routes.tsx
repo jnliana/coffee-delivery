@@ -5,14 +5,19 @@ import {
 } from 'react-router-dom';
 import { Home, Cart, Checkout } from '@/pages';
 import { CartContextProvider } from '../context/cart/cartContext';
+import { CheckoutContextProvider } from '@/context/checkout/checkoutContext';
 
 const routeDefinition = createRoutesFromElements(
   <Route>
     <Route element={<CartContextProvider />}>
       <Route path="/" element={<Home />} />
-      <Route path="/cart" element={<Cart />} />
+      <Route element={<CheckoutContextProvider />}>
+        <Route path="/cart" element={<Cart />} />
+      </Route>
     </Route>
-    <Route path="/checkout" element={<Checkout />} />
+    <Route element={<CheckoutContextProvider />}>
+      <Route path="/checkout" element={<Checkout />} />
+    </Route>
   </Route>,
 );
 
