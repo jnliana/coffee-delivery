@@ -1,13 +1,14 @@
 import { Product } from '@/domain/models/product';
 import { useCallback, useReducer } from 'react';
-import { CartState, CartAction } from './cart.types';
+import { CartAction } from './cart.types';
 import { produce } from 'immer';
+import { Cart } from '../cartContext.types';
 
-const initialState: CartState = {
+const initialState: Cart = {
   products: [],
 };
 
-function cartReducer(state: CartState, action: CartAction) {
+function cartReducer(state: Cart, action: CartAction) {
   const { type, payload } = action;
 
   if (!payload) return state;

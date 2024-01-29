@@ -1,15 +1,25 @@
 import { Navbar } from '@/components';
-import { CheckoutForm } from './components/CheckoutForm';
-import { PurchaseReview } from './components/PurchaseReview';
+import { useCart } from '@/hooks';
+import { EmptyCart, PurchaseReview, CheckoutForm } from './components';
 
 export const Cart = () => {
-  return (
-    <>
-      <Navbar />
+  const { totalAmount } = useCart();
+
+  const content = () => {
+    return totalAmount ? (
       <div className="flex flex-col lg:flex-row justify-center gap-6 mb-4 p-8">
         <CheckoutForm />
         <PurchaseReview />
       </div>
+    ) : (
+      <EmptyCart />
+    );
+  };
+
+  return (
+    <>
+      <Navbar />
+      {content()}
     </>
   );
 };

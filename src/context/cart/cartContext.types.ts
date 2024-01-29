@@ -1,4 +1,5 @@
 import { Product } from '@/domain/models/product';
+import { ReactNode } from 'react';
 
 export type ItemCart = {
   product: Product;
@@ -15,4 +16,8 @@ export interface CartContextProps {
   decrementProductToCart: (product: Product) => void;
   removeProductToCart: (product: Product) => void;
   resetCart: () => void;
+}
+
+export interface cartContextProviderProps {
+  children?: ReactNode;
 }

@@ -11,6 +11,7 @@ export const ProductCard = ({
   quantity = 0,
   handleClickDecrementProduct,
   handleClickIncreaseProduct,
+  handleClickCart,
 }: ProductProps) => {
   const { image, description, name, price } = product;
   return (
@@ -20,9 +21,9 @@ export const ProductCard = ({
       </div>
       <div className="flex flex-col items-center pt-14">
         <h2 className="font-semibold py-2">{name}</h2>
-        <p> {description} </p>
+        <p className="font-serif"> {description} </p>
         <div className="flex flex-row flex-wrap items-center gap-4 pt-4">
-          <span>{price}</span>
+          <span>$ {price}</span>
           <QuantitySelector
             quantity={quantity}
             handleClickDecrement={() => handleClickDecrementProduct(product)}
@@ -35,6 +36,7 @@ export const ProductCard = ({
             nameIcon="cart"
             classOption={NamingClass.secondary}
             size={ButtonSize.xsmall}
+            onClick={handleClickCart}
           />
         </div>
       </div>

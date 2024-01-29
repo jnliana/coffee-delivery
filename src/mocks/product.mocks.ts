@@ -18,13 +18,14 @@ import img14 from '../assets/images/mochaccino.png';
 export const productItems: Product[] = [
   {
     id: nanoid(),
-    description: 'O tradicional café feito com água quente e grãos moídos',
+    description:
+      'Café tradicional elaborado con agua caliente y granos molidos.',
     image: {
       url: img1,
       description:
-        'Café expresso tradicional em uma xícara branca em cima de um pires branco',
+        'Espresso tradicional en una taza blanca encima de un platillo blanco',
     },
-    name: 'Expresso Tradicional',
+    name: 'Expreso Tradicional',
     price: 9.5,
     tags: [
       {
@@ -35,11 +36,11 @@ export const productItems: Product[] = [
   },
   {
     id: nanoid(),
-    description: 'Expresso diluído, menos intenso que o tradicional',
+    description: 'Expresso diluido, menos intenso que el tradicional',
     image: {
       url: img2,
       description:
-        'Café expresso americano em uma xícara branca em cima de um pires branco',
+        'Espresso americano en una taza blanca encima de un platillo blanco',
     },
     name: 'Expresso Americano',
     price: 8,
@@ -52,11 +53,11 @@ export const productItems: Product[] = [
   },
   {
     id: nanoid(),
-    description: 'Café expresso tradicional com espuma cremosa',
+    description: 'Espresso tradicional con espuma cremosa',
     image: {
       url: img3,
       description:
-        'Café expresso cremoso em uma xícara branca em cima de um pires branco',
+        'Espresso cremoso en una taza blanca encima de un platillo blanco',
     },
     name: 'Expresso Cremoso',
     price: 10,
@@ -69,11 +70,11 @@ export const productItems: Product[] = [
   },
   {
     id: nanoid(),
-    description: 'Bebida preparada com café expresso e cubos de gelo',
+    description: 'Bebida preparada con espresso y cubitos de hielo.',
     image: {
       url: img4,
       description:
-        'Café expresso gelado em uma xícara branca em cima de um pires branco',
+        'Espresso helado en una taza blanca encima de un platillo blanco',
     },
     name: 'Expresso Gelado',
     price: 8.5,
@@ -90,13 +91,12 @@ export const productItems: Product[] = [
   },
   {
     id: nanoid(),
-    description: 'Meio a meio de expresso tradicional com leite vaporizado',
+    description: 'Mitad y mitad espresso tradicional con leche al vapor',
     image: {
       url: img5,
-      description:
-        'Café com leite em uma xícara branca em cima de um pires branco',
+      description: 'Latte en una taza blanca encima de un platillo blanco',
     },
-    name: 'Café com Leite',
+    name: 'Café con leche',
     price: 10.5,
     tags: [
       {
@@ -105,17 +105,17 @@ export const productItems: Product[] = [
       },
       {
         id: nanoid(),
-        name: 'com leite',
+        name: 'con leche',
       },
     ],
   },
   {
     id: nanoid(),
-    description:
-      'Uma dose de café expresso com o dobro de leite e espuma cremosa',
+    description: 'Un trago de espresso con el doble de leche y espuma cremosa',
     image: {
       url: img6,
-      description: 'Café latte em uma xícara branca em cima de um pires branco',
+      description:
+        'Café con leche en una taza blanca encima de un platillo blanco',
     },
     name: 'Latte',
     price: 12,
@@ -126,20 +126,20 @@ export const productItems: Product[] = [
       },
       {
         id: nanoid(),
-        name: 'com leite',
+        name: 'con leche',
       },
     ],
   },
   {
     id: nanoid(),
     description:
-      'Bebida com canela feita de doses iguais de café, leite e espuma',
+      'Bebida de canela elaborada a partir de dosis iguales de café, leche y espuma.',
     image: {
       url: img7,
       description:
-        'Café capuccino em uma xícara branca em cima de um pires branco',
+        'Café capuchino en una taza blanca encima de un platillo blanco',
     },
-    name: 'Capuccino',
+    name: 'Capuchino',
     price: 11.5,
     tags: [
       {
@@ -148,18 +148,17 @@ export const productItems: Product[] = [
       },
       {
         id: nanoid(),
-        name: 'com leite',
+        name: 'con leche',
       },
     ],
   },
   {
     id: nanoid(),
-    description:
-      'Café expresso misturado com um pouco de leite quente e espuma',
+    description: 'Espresso mezclado con un poco de leche caliente y espuma.',
     image: {
       url: img8,
       description:
-        'Café macchiato em uma xícara branca em cima de um pires branco',
+        'Café macchiato en una taza blanca encima de un platillo blanco',
     },
     name: 'Macchiato',
     price: 11,
@@ -170,17 +169,17 @@ export const productItems: Product[] = [
       },
       {
         id: nanoid(),
-        name: 'com leite',
+        name: 'con leche',
       },
     ],
   },
   {
     id: nanoid(),
-    description: 'Café expresso com calda de chocolate, pouco leite e espuma',
+    description: 'Espresso con sirope de chocolate, poca leche y espuma',
     image: {
       url: img9,
       description:
-        'Café macchiato em uma xícara branca em cima de um pires branco',
+        'Café macchiato en una taza blanca encima de un platillo blanco',
     },
     name: 'Mocaccino',
     price: 12.5,
@@ -191,19 +190,20 @@ export const productItems: Product[] = [
       },
       {
         id: nanoid(),
-        name: 'com leite',
+        name: 'con leche',
       },
     ],
   },
   {
     id: nanoid(),
-    description: 'Bebida feita com chocolate dissolvido no leite quente e café',
+    description:
+      'Bebida elaborada con chocolate disuelto en leche caliente y café.',
     image: {
       url: img10,
       description:
-        'Café com chocolate quente em uma xícara branca em cima de um pires branco',
+        'Café con chocolate caliente en una taza blanca encima de un platillo blanco',
     },
-    name: 'Chocolate Quente',
+    name: 'Chocolate caliente',
     price: 13,
     tags: [
       {
@@ -212,18 +212,17 @@ export const productItems: Product[] = [
       },
       {
         id: nanoid(),
-        name: 'com leite',
+        name: 'con leche',
       },
     ],
   },
   {
     id: nanoid(),
-    description:
-      'Drink gelado de café expresso com rum, creme de leite e hortelã',
+    description: 'Bebida espresso helada con ron, nata y menta',
     image: {
       url: img11,
       description:
-        'Café cubano em uma xícara branca em cima de um pires branco',
+        'Café cubano en una taza blanca encima de un platillo blanco',
     },
     name: 'Cubano',
     price: 13.5,
@@ -234,37 +233,37 @@ export const productItems: Product[] = [
       },
       {
         id: nanoid(),
-        name: 'alcoólico',
+        name: 'alcohólico',
       },
       {
         id: nanoid(),
-        name: 'gelado',
+        name: 'helado',
       },
     ],
   },
   {
     id: nanoid(),
-    description: 'Bebida adocicada preparada com café e leite de coco',
+    description: 'Bebida dulce preparada con café y leche de coco.',
     image: {
       url: img12,
       description:
-        'Café havaiano em uma xícara branca em cima de um pires branco',
+        'Café hawaiano en una taza blanca encima de un platillo blanco',
     },
-    name: 'Havaiano',
+    name: 'Hawaiano',
     price: 10,
     tags: [
       {
         id: nanoid(),
-        name: 'especial',
+        name: 'Especial',
       },
     ],
   },
   {
     id: nanoid(),
-    description: 'Bebida preparada com grãos de café árabe e especiarias',
+    description: 'Bebida preparada con granos de café árabe y especias.',
     image: {
       url: img13,
-      description: 'Café árabe em uma xícara branca em cima de um pires branco',
+      description: 'Café árabe en una taza blanca encima de un platillo blanco',
     },
     name: 'Árabe',
     price: 10,
@@ -277,13 +276,14 @@ export const productItems: Product[] = [
   },
   {
     id: nanoid(),
-    description: 'Bebida a base de café, uísque irlandês, açúcar e chantilly',
+    description:
+      'Bebida a base de café, whisky irlandés, azúcar y nata montada.',
     image: {
       url: img14,
       description:
-        'Café irlandes em uma xícara branca em cima de um pires branco',
+        'Café irlandés en una taza blanca encima de un platillo blanco',
     },
-    name: 'Irlandês',
+    name: 'Irlandesa',
     price: 14.5,
     tags: [
       {
@@ -292,7 +292,7 @@ export const productItems: Product[] = [
       },
       {
         id: nanoid(),
-        name: 'alcoólico',
+        name: 'alcohólico',
       },
     ],
   },

@@ -1,11 +1,11 @@
-import { createContext, ReactNode } from 'react';
+import { createContext } from 'react';
 import { Outlet } from 'react-router-dom';
-import { Cart, CartContextProps } from './cartContext.types';
+import {
+  Cart,
+  CartContextProps,
+  cartContextProviderProps,
+} from './cartContext.types';
 import { useCartReducer } from './reducer/useCartReducer';
-
-interface cartContextProviderProps {
-  children?: ReactNode;
-}
 
 export const cartContext = createContext({} as CartContextProps);
 

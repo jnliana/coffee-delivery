@@ -4,5 +4,6 @@ export type ProductProps = {
   product: Product;
   handleClickDecrementProduct: (e: Product) => void;
   handleClickIncreaseProduct: (e: Product) => void;
+  handleClickCart: () => void;
   quantity?: number;
 };

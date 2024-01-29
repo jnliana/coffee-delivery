@@ -58,9 +58,11 @@ export const QuantitySelector = ({
   const computedSize = useMemo(() => {
     return getSize(size);
   }, [size]);
+
   const computedTextSize = useMemo(() => {
     return getTextsize(size);
   }, [size]);
+
   return (
     <div className="flex flex-row flex-wrap bg-grey-200 rounded-sm text-purple-100">
       <button
